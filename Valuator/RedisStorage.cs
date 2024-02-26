@@ -22,11 +22,6 @@ namespace Valudator
             db.StringSet(key, value);
         }
 
-        public bool IsExistsInSet(string setKey, string value)
-        {
-            return db.SetContains(setKey, value);
-        }
-
         public List<string> GetKeys()
         {
             var keys = _connection.GetServer("localhost:6379").Keys();
