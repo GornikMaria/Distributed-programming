@@ -5,11 +5,11 @@ namespace Valudator
     public class RedisStorage : IStorage
     {
         private readonly IDatabase db;
-        private string _host = "localhost";
+        private readonly IConnectionMultiplexer _connection;
 
         public RedisStorage() {
-            IConnectionMultiplexer connectionMultiplexer = ConnectionMultiplexer.Connect(_host);
-            db = connectionMultiplexer.GetDatabase();
+            _connection = ConnectionMultiplexer.Connect("localhost");
+            db = _connection.GetDatabase();
         }
 
         public string Load(string key)
@@ -27,9 +27,10 @@ namespace Valudator
             return db.SetContains(setKey, value);
         }
 
-        public void StoreToSet(string setKey, string value)
+        public List<string> GetKeys()
         {
-            db.SetAdd(setKey, value);
+            var keys = _connection.GetServer("localhost:6379").Keys();
+            return keys.Select(key => key.ToString()).ToList();
         }
     }
 }
