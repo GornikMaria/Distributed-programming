@@ -55,11 +55,11 @@ namespace Valuator.Pages
         private double GetSimilarity(string text)
         {
             var keys = _storage.GetKeys();
-            string startText = "TEXT-";
-            for (int i = 0; i < keys.Count; i++)
+            foreach (var key in keys)
             {
-                var value = keys[i];
-                if (value.StartsWith(startText))
+                var value = _storage.Get(key);
+                
+                if (text == value.ToString())
                 {
                     return 1;
                 }

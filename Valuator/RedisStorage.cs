@@ -22,6 +22,11 @@ namespace Valudator
             db.StringSet(key, value);
         }
 
+        public string Get(string value)
+        {
+            return db.StringGet(value);
+        }
+     
         public List<string> GetKeys()
         {
             var keys = _connection.GetServer("localhost:6379").Keys();
