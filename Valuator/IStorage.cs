@@ -4,7 +4,6 @@ namespace Valudator
     {
         void Store(string key, string value);
         string Load(string key);
-        public string Get(string value);
-        public List<string> GetKeys();
+        void SimilarityStore(string similarityKey, string text);
     }
 }

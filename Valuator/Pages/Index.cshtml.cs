@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using StackExchange.Redis;
 using Valudator;
 
 namespace Valuator.Pages
@@ -8,6 +9,7 @@ namespace Valuator.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly IStorage _storage;
+        private readonly IConnectionMultiplexer _connectionMultiplexer;
 
         public IndexModel(ILogger<IndexModel> logger, IStorage storage)
         {
@@ -33,8 +35,7 @@ namespace Valuator.Pages
 
             //TODO: посчитать similarity и сохранить в БД по ключу similarityKey
             string similarityKey = "SIMILARITY-" + id;
-            string similarity = GetSimilarity(text).ToString();
-            _storage.Store(similarityKey, similarity);
+            _storage.SimilarityStore(similarityKey, text);
 
             //TODO: сохранить в БД text по ключу textKey
             string textKey = "TEXT-" + id;
@@ -50,21 +51,6 @@ namespace Valuator.Pages
             }
             int notLetterCharsCount = text.Where(ch => !char.IsLetter(ch)).Count();
             return notLetterCharsCount / (double) text.Length;
-        }
-
-        private double GetSimilarity(string text)
-        {
-            var keys = _storage.GetKeys();
-            foreach (var key in keys)
-            {
-                var value = _storage.Get(key);
-                
-                if (text == value.ToString())
-                {
-                    return 1;
-                }
-            }
-            return 0;
         }
     }
 }
