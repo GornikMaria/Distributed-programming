@@ -6,3 +6,8 @@ start dotnet run --urls "http://localhost:5002/"
 cd ..
 cd nginx
 start cmd /k nginx.exe
+
+
+cd ..\RankCalculator
+start dotnet run
+
