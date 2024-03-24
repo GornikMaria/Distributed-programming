@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\Valuator.csproj": {}
+    "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\Valuator.csproj": {
+    "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\Valuator.csproj",
+        "projectUniqueName": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj",
         "projectName": "Valuator",
-        "projectPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\Valuator.csproj",
+        "projectPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj",
         "packagesPath": "C:\\Users\\beyor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\obj\\",
+        "outputPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\beyor\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "NATS.Client": {
+              "target": "Package",
+              "version": "[1.1.4, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.7.20, )"

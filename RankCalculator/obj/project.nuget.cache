@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "OHCzjbc0dlzwdSnyvOwWh7e5UfiGv7b/UUE7xoDOrHlBZAVr3xPGrXYShGWUTieaV9hZbYWS38Nw/NmwDBav3w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\RankCalculator\\RankCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\beyor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\beyor\\.nuget\\packages\\nats.client\\1.1.4\\nats.client.1.1.4.nupkg.sha512",
+    "C:\\Users\\beyor\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\beyor\\.nuget\\packages\\stackexchange.redis\\2.7.20\\stackexchange.redis.2.7.20.nupkg.sha512",
+    "C:\\Users\\beyor\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

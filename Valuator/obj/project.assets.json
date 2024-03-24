@@ -18,6 +18,19 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "NATS.Client/1.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NATS.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NATS.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Pipelines.Sockets.Unofficial/2.2.8": {
         "type": "package",
         "dependencies": {
@@ -119,6 +132,24 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "NATS.Client/1.1.4": {
+      "sha512": "lcMgs/aNBr+N7vRek35Itk/fs7UmyQSVtfGyQPKA5Oh8Olg+0L4XHuI98d2euF3E2bet9KKADYesW/OAEmA6VQ==",
+      "type": "package",
+      "path": "nats.client/1.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/NATS.Client.dll",
+        "lib/net46/NATS.Client.xml",
+        "lib/netstandard1.6/NATS.Client.dll",
+        "lib/netstandard1.6/NATS.Client.xml",
+        "lib/netstandard2.0/NATS.Client.dll",
+        "lib/netstandard2.0/NATS.Client.xml",
+        "nats.client.1.1.4.nupkg.sha512",
+        "nats.client.nuspec",
+        "package-icon.png"
+      ]
+    },
     "Pipelines.Sockets.Unofficial/2.2.8": {
       "sha512": "zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
       "type": "package",
@@ -192,6 +223,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "NATS.Client >= 1.1.4",
       "StackExchange.Redis >= 2.7.20"
     ]
   },
@@ -201,11 +233,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\Valuator.csproj",
+      "projectUniqueName": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj",
       "projectName": "Valuator",
-      "projectPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\Valuator.csproj",
+      "projectPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj",
       "packagesPath": "C:\\Users\\beyor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Valuator\\obj\\",
+      "outputPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\beyor\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -232,6 +264,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "NATS.Client": {
+            "target": "Package",
+            "version": "[1.1.4, )"
+          },
           "StackExchange.Redis": {
             "target": "Package",
             "version": "[2.7.20, )"
