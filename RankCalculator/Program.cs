@@ -1,4 +1,6 @@
-﻿using NATS.Client;
+﻿using System;
+using System.Linq;
+using NATS.Client;
 using System.Text;
 using StackExchange.Redis;
 
@@ -8,8 +10,8 @@ namespace RankCalculator
     {
         static void Main(string[] args)
         {
-            ConnectionMultiplexer connection = ConnectionMultiplexer.Connect("localhost");
-            IDatabase db = connection.GetDatabase();
+            IConnectionMultiplexer connectionMultiplexer = ConnectionMultiplexer.Connect("localhost");
+            IDatabase db = connectionMultiplexer.GetDatabase();
 
             ConnectionFactory cf = new ConnectionFactory();
             using IConnection c = cf.CreateConnection();
@@ -23,13 +25,13 @@ namespace RankCalculator
 
                 string rankKey = "RANK-" + id;
                 double rank = GetRank(text);
-
                 db.StringSet(rankKey, rank);
+                Console.WriteLine(rankKey);
             });
 
             s.Start();
 
-            Console.WriteLine("Press Enter to exit");
+            Console.WriteLine("start RankCalculator");
             Console.ReadLine();
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mEF5Eflwj7R+9zaYA6DG+x9lZ7TOJnPDSHsqYs7PCHmsblKLDxLptt2rteSEMTGTObN6+QlXB7Hadty82iKFVw==",
+  "dgSpecHash": "bB3odlaOQBmWLyULItFz+D9RFNrWQ4Eqq6sBObBx6YNbtG7hmaDvvbOaVkfMUbzh/4xLGJxNBLC1EYGUHK/3Xg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj",
+  "projectFilePath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa3\\Valuator\\Valuator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beyor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\beyor\\.nuget\\packages\\nats.client\\1.1.4\\nats.client.1.1.4.nupkg.sha512",

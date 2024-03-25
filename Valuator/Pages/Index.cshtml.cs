@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-
 namespace Valuator.Pages;
 public class IndexModel : PageModel
 {
@@ -32,20 +31,17 @@ public class IndexModel : PageModel
 
         string rankKey = "RANK-" + id;
         //TODO: посчитать rank и сохранить в БД по ключу rankKey
-        /*
-        string rank = GetRank(text).ToString();
+        /* string rank = GetRank(text).ToString();
         _storage.Store(rankKey, rank);*/
+        
         CancellationTokenSource cts = new CancellationTokenSource();
-
         ConnectionFactory cf = new ConnectionFactory();
 
         using (IConnection c = cf.CreateConnection())
         {
             byte[] data = Encoding.UTF8.GetBytes(id);
             c.Publish("valuator.processing.rank", data);
-            
             c.Drain();
-
             c.Close();
         }
 

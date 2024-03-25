@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OHCzjbc0dlzwdSnyvOwWh7e5UfiGv7b/UUE7xoDOrHlBZAVr3xPGrXYShGWUTieaV9hZbYWS38Nw/NmwDBav3w==",
+  "dgSpecHash": "j9F4Oz6YncsowocF9tCWMPro1wV5I376psrukaU2GxewWQqMVzVrM9q/kYqFmC6OFR/IRKI1G9X2uP8MPvJ/ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\RankCalculator\\RankCalculator.csproj",
+  "projectFilePath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa3\\RankCalculator\\RankCalculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beyor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\beyor\\.nuget\\packages\\nats.client\\1.1.4\\nats.client.1.1.4.nupkg.sha512",

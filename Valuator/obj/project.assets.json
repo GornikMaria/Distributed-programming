@@ -233,11 +233,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj",
+      "projectUniqueName": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa3\\Valuator\\Valuator.csproj",
       "projectName": "Valuator",
-      "projectPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\Valuator.csproj",
+      "projectPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa3\\Valuator\\Valuator.csproj",
       "packagesPath": "C:\\Users\\beyor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa2\\Valuator\\obj\\",
+      "outputPath": "C:\\Users\\beyor\\OneDrive\\Рабочий стол\\Distributed-programming-pa3\\Valuator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\beyor\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -9,7 +9,6 @@ namespace Valuator
     {
         private readonly ILogger<RedisStorage> _logger;
         private readonly IConnectionMultiplexer _connectionMultiplexer;
-        private readonly RedisKey _textIdentifiersKey = "textIdentifiers";
         private readonly string _host = "localhost";
  
         public RedisStorage(ILogger<RedisStorage> logger)
