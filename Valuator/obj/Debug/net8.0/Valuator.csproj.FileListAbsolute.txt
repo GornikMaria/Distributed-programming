@@ -68,3 +68,4 @@ C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valu
 C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valuator\obj\Debug\net8.0\Valuator.pdb
 C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valuator\obj\Debug\net8.0\Valuator.genruntimeconfig.cache
 C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valuator\obj\Debug\net8.0\ref\Valuator.dll
+C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valuator\obj\Debug\net8.0\Valuator.sourcelink.json

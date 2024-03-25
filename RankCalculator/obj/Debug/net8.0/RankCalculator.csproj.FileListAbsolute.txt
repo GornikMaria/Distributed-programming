@@ -40,3 +40,4 @@ C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valu
 C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valuator\RankCalculator\obj\Debug\net8.0\RankCalculator.pdb
 C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valuator\RankCalculator\obj\Debug\net8.0\RankCalculator.genruntimeconfig.cache
 C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\Valuator\RankCalculator\obj\Debug\net8.0\ref\RankCalculator.dll
+C:\Users\beyor\OneDrive\Рабочий стол\Distributed-programming-pa3\RankCalculator\obj\Debug\net8.0\RankCalculator.sourcelink.json

@@ -1,4 +1,5 @@
-﻿﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿﻿using System.Globalization;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace Valuator.Pages;
 
 public class SummaryModel : PageModel
@@ -21,7 +22,7 @@ public class SummaryModel : PageModel
 
         //TODO: проинициализировать свойства Rank и Similarity значениями из БД
         string rankKey = "RANK-" + id;
-        Rank = Convert.ToDouble(_storage.Load(rankKey));
+        Rank = double.Parse(_storage.Load(rankKey), CultureInfo.InvariantCulture);
 
         string similarityKey = "SIMILARITY-" + id;
         Similarity = Convert.ToDouble(_storage.Load(similarityKey));
