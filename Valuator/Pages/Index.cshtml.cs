@@ -27,7 +27,11 @@ public class IndexModel : PageModel
     {
         _logger.LogDebug(text);
 
-        string id = Guid.NewGuid().ToString();  
+        string id = Guid.NewGuid().ToString();
+
+        string similarityKey = "SIMILARITY-" + id;
+        //TODO: посчитать similarity и сохранить в БД по ключу similarityKey
+        _storage.SimilarityStore(similarityKey, text);  
         
         //TODO: сохранить в БД text по ключу textKey
         string textKey = "TEXT-" + id;
@@ -45,9 +49,6 @@ public class IndexModel : PageModel
         }
         cts.Cancel();
 
-        string similarityKey = "SIMILARITY-" + id;
-        //TODO: посчитать similarity и сохранить в БД по ключу similarityKey
-        _storage.SimilarityStore(similarityKey, text);
 
         return Redirect($"summary?id={id}");
     }
